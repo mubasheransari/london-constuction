@@ -1,0 +1,30 @@
+.main_container {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #000;
+
+    .header_container {
+        
+        display:flex;
+        padding: 20px 20px;
+        justify-content: space-between;
+        
+    
+    
+    }
+
+    .nav_bar {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        justify-content: space-around;
+
+        p{
+            // margin-bottom: 0px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
