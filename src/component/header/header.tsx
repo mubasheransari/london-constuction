@@ -8,13 +8,15 @@ import InfoIcon from '@mui/icons-material/Info';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
+import PersonIcon from '@mui/icons-material/Person';
+import Link from 'next/link';
 
 type Props = {}
 
 const Header = (props: Props) => {
     const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
-    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const handleClick = (event:any) => {
       setAnchorEl(event.currentTarget);
     };
   
@@ -28,26 +30,34 @@ const Header = (props: Props) => {
   return (
     <div className={style.main_container}>
     <div className={style.header_container}>
-        <p>Company Logo</p>
-        <div>Company Name</div>
+        <p>
+            <img width={'54px'} src="https://www.lilyhomes.com.au/wp-content/uploads/2020/02/lily-icon.png" />
+        </p>
+        <div className='h3'>London Construction</div>
         
         <div>
-            Log In
+          <PersonIcon fontSize='large' />
         </div>
         </div>
         <div className={style.nav_bar}>
+            <Link href='/'>
             <p>
-            <span className='me-1'>Home</span>
-             <HomeIcon fontSize="small"/>
-                </p>
+            <span>
+            <HomeIcon fontSize="small"/>
+            </span>
+            <span className='ms-1'>Home</span>
+            </p>
+            </Link>
+            <Link href='/about'>
             <p>
-            <span className='me-1'>About</span>
-                <InfoIcon fontSize="small" />
-                </p>
+            <InfoIcon fontSize="small" />
+            <span className='ms-1'>About</span>
+            </p>
+            </Link>
             <div>
                 <p onClick={(e)=>handleClick(e)} >
-                <span className='me-1'>Services</span>
                 <MiscellaneousServicesIcon fontSize="small" />
+                <span className='ms-1'>Services</span>
                     </p>
                 <Popover
                 id={id}
@@ -68,14 +78,18 @@ const Header = (props: Props) => {
         </Typography>
       </Popover>
                 </div>
+            <Link href='/gallery'>
             <p>
-            <span className='me-1'>Gallery</span>
             <CollectionsIcon fontSize="small" /> 
+            <span className='ms-1'>Gallery</span>
             </p>
+            </Link>
+            <Link href='/contact'>
             <p>
-            <span className='me-1'>Contact Us</span>
             <AddIcCallIcon fontSize="small" />
+            <span className='ms-1'>Contact Us</span>
             </p>
+            </Link>
         </div>
         </div>
   )

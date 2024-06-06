@@ -3,6 +3,30 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+ 
+  .image_wrap{
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+
+    .tag_line{
+      font-size: 32px;
+      position: absolute;
+      background-color: #fff;
+      padding: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-wrap: nowrap;
+
+      @media (max-width:767px) {
+        font-size: 18px;
+        
+      }
+      
+    }
+  }
+
+
 
 }
