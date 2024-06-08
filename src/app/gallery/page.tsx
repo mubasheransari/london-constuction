@@ -4,7 +4,7 @@ type Props = {}
 
 const Gallery = (props: Props) => {
   return (
-    <div>Gallery</div>
+    <div className='main_class'>Gallery</div>
   )
 }
 

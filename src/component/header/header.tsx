@@ -10,8 +10,10 @@ import CollectionsIcon from '@mui/icons-material/Collections';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import PersonIcon from '@mui/icons-material/Person';
 import Link from 'next/link';
+import HamburgerMenu from '../hamburgerMenu/hamburgerMenu';
 
 type Props = {}
+
 
 const Header = (props: Props) => {
     const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
@@ -30,18 +32,20 @@ const Header = (props: Props) => {
   return (
     <div className={style.main_container}>
     <div className={style.header_container}>
-        <p>
-            <img width={'54px'} src="https://www.lilyhomes.com.au/wp-content/uploads/2020/02/lily-icon.png" />
+      <Link href='/'>
+        <p className={style.logo}>
+            <img src="https://www.lilyhomes.com.au/wp-content/uploads/2020/02/lily-icon.png" />
         </p>
-        <div className='h3'>London Construction</div>
+        </Link>
+        <div className={style.heading}>London Construction</div>
         
-        <div>
-          <PersonIcon fontSize='large' />
+        <div className={style.log_in}>
+          <HamburgerMenu />
         </div>
         </div>
         <div className={style.nav_bar}>
             <Link href='/'>
-            <p>
+            <p className={style.log_in}>
             <span>
             <HomeIcon fontSize="small"/>
             </span>

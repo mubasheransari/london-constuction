@@ -8,9 +8,46 @@
         display:flex;
         padding: 20px 40px 0px 40px;
         justify-content: space-between;
-        
-    
-    
+
+        @media (max-width:767px) {
+            padding: 20px 10px 0px 10px;
+
+            
+        }
+
+        .heading {
+            font-size: 32px;
+
+            @media (max-width:767px) {
+                font-size: 18px;
+                
+            }
+        }
+
+        .logo {
+            img {
+                width: 54px;
+
+                @media (max-width:767px) {
+                    width: 34px;
+                    
+                }
+            }
+        }
+
+        .log_in {
+            svg {
+                font-size: 32px;
+                display: none;
+
+                @media (max-width:767px) {
+                    display: block;
+                    font-size: 24px;
+                    
+                }
+            }
+
+        }
     }
 
     .nav_bar {
@@ -20,6 +57,13 @@
         max-width: 1000px;
         margin: auto;
         justify-content: space-around;
+
+        @media (max-width:786px) {
+            display: none;
+            
+        }
+
+      
 
         a{
             text-decoration: none;

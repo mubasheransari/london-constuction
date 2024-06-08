@@ -1,0 +1,14 @@
+.home_container {
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    margin-top: 20px;
+
+    @media (max-width:767px) {
+        font-size: 26px;
+        
+    }
+}
+
+}
