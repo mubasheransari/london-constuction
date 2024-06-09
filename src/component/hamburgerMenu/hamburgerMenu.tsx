@@ -78,13 +78,13 @@ export default function HamburgerMenu() {
                 {item.sub_link?.map((val,index)=>{
                     return(
                         <AccordionDetails key={'sub'+ index}  onClick={handleClose}>
-                            {val.sub_name}
+                            <Link href="/services">{val.sub_name}</Link>
                         </AccordionDetails>
 
                     )
 
                 })}
-                                </Accordion>
+                 </Accordion>
             }
                 
                 </div>

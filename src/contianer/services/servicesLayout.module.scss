@@ -1,0 +1,20 @@
+.services_container {
+    padding: 20px;
+    font-size: 18px;
+
+    .heading {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .sub_line{
+        font-weight: 600;
+    }
+    br {
+        display: none;
+        
+        @media (max-width:767px) {
+            display: block;
+        }
+    }
+}

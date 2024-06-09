@@ -2,21 +2,56 @@
     background-color: #fff;
     color: #000;
     border-bottom: 1px solid #000;
+    background-image: url('https://www.lilyhomes.com.au/wp-content/uploads/2020/03/jasper.jpg');
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+    position: relative;
+
+    @media (max-width:767px) {
+        height: 500px;
+        
+    }
+
+    .tag_line{
+        font-size: 32px;
+        position: absolute;
+        background-color: #fff;
+        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-wrap: nowrap;
+  
+        @media (max-width:767px) {
+          font-size: 18px;
+          
+        }
+        
+      }
+
+   
+
 
     .header_container {
-        
         display:flex;
         padding: 20px 40px 0px 40px;
         justify-content: space-between;
+        background-color: #00000087;
 
         @media (max-width:767px) {
             padding: 20px 10px 0px 10px;
+        }
 
-            
+        .brand_logo{
+            flex:1
         }
 
         .heading {
             font-size: 32px;
+            flex: 1;
+            color: #fff;
+            text-align: center;
 
             @media (max-width:767px) {
                 font-size: 18px;
@@ -25,6 +60,7 @@
         }
 
         .logo {
+            flex:1;
             img {
                 width: 54px;
 
@@ -36,13 +72,35 @@
         }
 
         .log_in {
+            flex:1;
             svg {
                 font-size: 32px;
                 display: none;
 
-                @media (max-width:767px) {
+                @media (max-width:1200px) {
                     display: block;
                     font-size: 24px;
+                }
+            }
+
+            .nav_list{
+        
+                display: flex;
+                color: #fff;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+
+                @media (max-width:1200px) {
+                    display: none;
                     
                 }
             }
@@ -54,7 +112,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        max-width: 1000px;
+        max-width: 70%;
         margin: auto;
         justify-content: space-around;
 
@@ -62,8 +120,6 @@
             display: none;
             
         }
-
-      
 
         a{
             text-decoration: none;
@@ -76,6 +132,16 @@
             font-size: 18px;
         }
 
-        
+      
     }
+   
+}
+.opt{
+    padding: 10px;
+
+a {
+    text-decoration: none;
+    color: #000
+};
+
 }

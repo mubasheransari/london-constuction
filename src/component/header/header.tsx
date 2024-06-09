@@ -31,19 +31,27 @@ const Header = (props: Props) => {
 
   return (
     <div className={style.main_container}>
+       <p className={style.tag_line}>Building Your Dreams into Reality</p>
     <div className={style.header_container}>
-      <Link href='/'>
+      <Link href='/' className={style.brand_logo}>
         <p className={style.logo}>
             <img src="https://www.lilyhomes.com.au/wp-content/uploads/2020/02/lily-icon.png" />
         </p>
         </Link>
-        <div className={style.heading}>London Construction</div>
+        <div className={style.heading}>South Share</div>
         
         <div className={style.log_in}>
           <HamburgerMenu />
+          <div className={style.nav_list}>
+            <Link href='/'><p>Home</p></Link>
+            <Link href={'/about'}><p>About</p></Link>
+            <Link href='/services'><p>Services</p></Link>
+            <Link href={'/gallery'}><p>Gallery</p></Link>
+            <Link href={'/contact'}><p>Contact us</p></Link>
+          </div>
         </div>
         </div>
-        <div className={style.nav_bar}>
+        {/* <div className={style.nav_bar}>
             <Link href='/'>
             <p className={style.log_in}>
             <span>
@@ -58,11 +66,11 @@ const Header = (props: Props) => {
             <span className='ms-1'>About</span>
             </p>
             </Link>
-            <div>
+            <div className={style.service}>
                 <p onClick={(e)=>handleClick(e)} >
                 <MiscellaneousServicesIcon fontSize="small" />
                 <span className='ms-1'>Services</span>
-                    </p>
+                </p>
                 <Popover
                 id={id}
                 open={open}
@@ -72,15 +80,15 @@ const Header = (props: Props) => {
                     vertical: 'bottom',
                     horizontal: 'left',
                     }}
-      >
-        <Typography sx={{ p: 2 }}>
-            <p>Design & Build</p>
-            <p>Shop Fitting</p>
-            <p>Construction</p>
-            <p>Project Management</p>
-            <p>Maintaince</p>
-        </Typography>
-      </Popover>
+              > 
+            <div className={style.opt}>
+            <Link onClick={handleClose} href='/services'><p>Design & Build</p></Link>
+            <Link onClick={handleClose} href='/services'><p>Shop Fitting</p></Link>
+            <Link onClick={handleClose} href='/services'><p>Construction</p></Link>
+            <Link onClick={handleClose} href='/services'><p>Project Management</p></Link>
+            <Link onClick={handleClose} href='/services'><p>Maintaince</p></Link>
+            </div>
+                </Popover>
                 </div>
             <Link href='/gallery'>
             <p>
@@ -94,7 +102,8 @@ const Header = (props: Props) => {
             <span className='ms-1'>Contact Us</span>
             </p>
             </Link>
-        </div>
+        </div> */}
+       
         </div>
   )
 }

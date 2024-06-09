@@ -1,6 +1,6 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation, } from 'swiper/modules';
 import { Pagination } from 'swiper/modules';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
@@ -28,7 +28,7 @@ const ImageSlider = ({}:Iprops) => {
     <div className={style.swiper_container}>
     <Swiper
       pagination={false}
-      modules={[Navigation,Pagination,Autoplay]}
+      modules={[Navigation,Pagination]}
       navigation={true}
       spaceBetween={10}
       slidesPerView={'auto'}

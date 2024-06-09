@@ -10,7 +10,7 @@ const Footer = (props: Props) => {
     <div className={style.footer_container}>
         <p className={style.footer_heading}>Build and Design with us</p>
         <div>
-        <p className='mb-0'>info@london_construction.com</p>
+        <p className='mb-0'>info@south-share.com</p>
         <p  className='mb-0'>tel:0900-111-1111-444</p>
         <p className='mb-0'>Address: abc building #05, Empire Estate,London</p>
         </div>
