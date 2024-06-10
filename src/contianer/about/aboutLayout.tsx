@@ -32,7 +32,7 @@ const AboutLayout = (props: Props) => {
     <div className={style.about_container}>
         <p className={style.heading}>About Us</p>
         <p>
-            Introduction: Welcome to South Share, where innovation meets craftsmanship. We are dedicated to transforming your vision into tangible structures with unparalleled quality and precision. 
+            Introduction: Welcome to South Shore, where innovation meets craftsmanship. We are dedicated to transforming your vision into tangible structures with unparalleled quality and precision. 
             Our team of experts ensures every project is executed to the highest standards, making us a leader in the construction industry.
         </p>
         <ul>

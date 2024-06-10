@@ -38,7 +38,7 @@ const Header = (props: Props) => {
             <img src="https://www.lilyhomes.com.au/wp-content/uploads/2020/02/lily-icon.png" />
         </p>
         </Link>
-        <div className={style.heading}>South Share</div>
+        <div className={style.heading}>South Shore</div>
         
         <div className={style.log_in}>
           <HamburgerMenu />
