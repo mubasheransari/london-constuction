@@ -1,0 +1,19 @@
+.gallery_container {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 20px;
+
+    @media (max-width:767px) {
+        max-width: 100%;
+        margin-bottom: 0px;
+        
+    }
+    .heading{
+        font-size: 42px;
+
+        @media (max-width:767px) {
+            font-size: 28px;
+            
+        }
+    }
+}

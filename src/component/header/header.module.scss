@@ -16,12 +16,25 @@
     .tag_line{
         font-size: 32px;
         position: absolute;
-        background-color: #fff;
+        background-color: transparent;
         padding: 10px;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         text-wrap: nowrap;
+
+        @media (max-width:767px) {
+            display: none;
+        }
+
+        img{
+            width: 150px;
+
+            @media (max-width:767px) {
+                width: 80px;
+            }
+        }
+        
   
         @media (max-width:767px) {
           font-size: 18px;
@@ -43,21 +56,63 @@
             padding: 20px 10px 0px 10px;
         }
 
-        .brand_logo{
-            flex:1
-        }
-
-        .heading {
-            font-size: 32px;
+        .social_links {
             flex: 1;
-            color: #fff;
-            text-align: center;
+            display: flex;
+            gap:15px;
+
+            p{
+                cursor: pointer;
+            }
 
             @media (max-width:767px) {
-                font-size: 18px;
+                display: none;
+            }
+
+            svg {
+                color: #fff;
+            }
+        }
+
+        .brand_logo{
+            flex:1;
+            display: none;
+
+            @media (max-width:767px) {
+                display: block;
                 
             }
         }
+
+        .heading {
+            flex: 1;
+            color: #fff;
+            text-align: center;
+            padding-bottom: 5px;
+
+            .text{
+                font-size: 32px;
+                margin-bottom: 0px;
+                line-height: 1;
+                @media (max-width:767px) {
+                    font-size: 18px;
+                }
+
+               
+
+        }
+        .tagLine{
+            margin-bottom: 0px;
+            line-height: 1;
+            text-wrap: nowrap;
+
+            @media (max-width:767px) {
+                font-size: 10px;
+                
+            }
+              
+      }
+    }
 
         .logo {
             flex:1;

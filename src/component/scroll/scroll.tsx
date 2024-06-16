@@ -1,0 +1,56 @@
+"use client"
+import React from 'react';
+import Link from 'next/link';
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, 
+        Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";   
+import style from './scroll.module.scss'
+type Props = {}
+
+const Scroll = (props: Props) => {
+
+    const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
+    const FadeUp = batch(Fade(), Move(), Sticky());
+
+  return (
+    <div className={style.scroll_container}>
+    <div style={{flex:1}}>
+        <ScrollContainer>
+        <ScrollPage  style={{height:'auto'}}>
+        <div style={{ display: "flex", justifyContent: "space-between" }} >
+        <div style={{flex:1}}>
+        <Animator animation={MoveOut(-1000, -500)}>
+            <img src='pexels-pixabay-280222.jpg' width={'auto'} height={'300px'} />
+        </Animator>
+        </div>
+        <div style={{flex:1}}>
+        </div>
+        </div>
+        </ScrollPage>
+        </ScrollContainer>
+    </div>
+    <div style={{display:'flex',justifyContent:'center',  flexDirection:'column', padding:'20px 10px',flex:2}}>
+      <p style={{fontSize:'60px'}}>Our Focus</p>
+      <p style={{fontSize:'24px'}}>
+      At South Shore Construction, we specialize in delivering high-quality residential and commercial building projects. Our focus is on 
+      craftsmanship, safety, and sustainability, ensuring each project exceeds client expectations. With a commitment to excellence and 
+      innovation, we build trust and lasting structures in every community we serve.
+      </p>
+      </div>
+     <div style={{flex:1}}>
+     <ScrollContainer>
+     <ScrollPage  style={{height:'auto'}}>
+     <div style={{ display: "flex", justifyContent: "space-between" }} >
+     <div style={{flex:1}}>
+     <Animator animation={MoveOut(1000, 500)}>
+     <img src='./pexels-binyaminmellish-186077.jpg' width={'auto'} height={'300px'} />
+     </Animator>
+     </div>
+     </div>
+     </ScrollPage>
+     </ScrollContainer>
+ </div>
+ </div>
+  )
+}
+
+export default Scroll

@@ -1,62 +1,63 @@
 import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import style from "./gallery.module.scss"
 
 const itemData = [
     {
-      img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-      title: 'Breakfast',
+      img: 'https://images.unsplash.com/photo-1718030463382-896949a8d53a',
+      title: 'south_shore',
     },
     {
-      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-      title: 'Burger',
+      img: 'https://images.unsplash.com/photo-1554435493-93422e8220c8',
+      title: 'south_shore',
     },
     {
-      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-      title: 'Camera',
+      img: 'https://images.unsplash.com/photo-1479839672679-a46483c0e7c8',
+      title: 'south_shore',
     },
     {
-      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-      title: 'Coffee',
+      img: 'https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8',
+      title: 'south_shore',
     },
     {
-      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-      title: 'Hats',
+      img: 'https://images.unsplash.com/photo-1481253127861-534498168948',
+      title: 'south_shores',
     },
     {
-      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-      title: 'Honey',
+      img: 'https://images.unsplash.com/photo-1685217392890-33c691273364',
+      title: 'south_shore',
     },
     {
-      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-      title: 'Basketball',
+      img: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e',
+      title: 'south_shore',
     },
     {
-      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-      title: 'Fern',
+      img: 'https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625',
+      title: 'south_shore',
     },
     {
-      img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-      title: 'Mushrooms',
+      img: 'https://images.unsplash.com/photo-1462396240927-52058a6a84ec',
+      title: 'south_shore',
     },
     {
-      img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-      title: 'Tomato basil',
+      img: 'https://plus.unsplash.com/premium_photo-1680157071172-ec9fb6dddea3',
+      title: 'south_shore',
     },
     {
-      img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-      title: 'Sea star',
+      img: 'https://images.unsplash.com/photo-1515733392795-4fbb2be3d1dd',
+      title: 'south_shorer',
     },
     {
-      img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-      title: 'Bike',
+      img: 'https://plus.unsplash.com/premium_photo-1680281936997-fd05afbde4f0',
+      title: 'south_shore',
     },
   ];
 
 export default function GalleryLayout() {
   return (
-    <>
-    <h2 className="text-center mt-3">Our Gallery</h2>
+    <div className={style.gallery_container}>
+    <p  className={`text-center mt-3 ${style.heading}`}>Our Gallery</p>
     <ImageList  cols={3} sx={{ width: '100%', maxWidth:'1600px', margin:'auto', marginTop:'20px'}} >
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -69,7 +70,7 @@ export default function GalleryLayout() {
         </ImageListItem>
       ))}
     </ImageList>
-    </>
+    </div>
   );
 }
 
