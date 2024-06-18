@@ -12,35 +12,35 @@ const Scroll = (props: Props) => {
     const FadeUp = batch(Fade(), Move(), Sticky());
 
   return (
+    <div className={style.main_container}>
     <div className={style.scroll_container}>
-    <div style={{flex:1}}>
         <ScrollContainer>
-        <ScrollPage  style={{height:'auto'}}>
-        <div style={{ display: "flex", justifyContent: "space-between" }} >
-        <div style={{flex:1}}>
+        <ScrollPage className={style.scroll_page}>
+        <div className={style.scroll_page_wrap}>
+        <div className={style.scroll_box}>
         <Animator animation={MoveOut(-1000, -500)}>
             <img src='pexels-pixabay-280222.jpg' width={'auto'} height={'300px'} />
         </Animator>
         </div>
-        <div style={{flex:1}}>
+        <div className={style.scroll_box}>
         </div>
         </div>
         </ScrollPage>
         </ScrollContainer>
     </div>
-    <div style={{display:'flex',justifyContent:'center',  flexDirection:'column', padding:'20px 10px',flex:2}}>
-      <p style={{fontSize:'60px'}}>Our Focus</p>
-      <p style={{fontSize:'24px'}}>
+    <div className={style.foucs_wrap}>
+      <p className={style.heading}>Our Focus</p>
+      <p className={style.text}>
       At South Shore Construction, we specialize in delivering high-quality residential and commercial building projects. Our focus is on 
       craftsmanship, safety, and sustainability, ensuring each project exceeds client expectations. With a commitment to excellence and 
       innovation, we build trust and lasting structures in every community we serve.
       </p>
       </div>
-     <div style={{flex:1}}>
+     <div className={style.scroll_container}>
      <ScrollContainer>
-     <ScrollPage  style={{height:'auto'}}>
-     <div style={{ display: "flex", justifyContent: "space-between" }} >
-     <div style={{flex:1}}>
+     <ScrollPage  className={style.scroll_page}>
+     <div className={style.scroll_page_wrap} >
+     <div className={style.scroll_box}>
      <Animator animation={MoveOut(1000, 500)}>
      <img src='./pexels-binyaminmellish-186077.jpg' width={'auto'} height={'300px'} />
      </Animator>

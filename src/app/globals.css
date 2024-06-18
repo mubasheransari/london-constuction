@@ -11,12 +11,12 @@
     
   }
   .swiper-button-prev::after {
-      /* content: '<'; */
+      content: '';
   }
   .swiper-button-next{
     color: #fff;
   }
   .swiper-button-next::after {
-    /* content: '>'; */
+    content: '';
 }
 }

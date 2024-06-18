@@ -25,6 +25,8 @@ const productData =[
 const ImageSlider = ({}:Iprops) => {
 
   return (
+    <div className={style.main_container}>
+     <p className={style.heading}>Our Signature Projects</p>
     <div className={style.swiper_container}>
     <Swiper
       pagination={false}
@@ -57,12 +59,14 @@ const ImageSlider = ({}:Iprops) => {
           return(
             <SwiperSlide key ={index+1}>
               <div className={style.card}>
-                <img src={url} alt='image'  />
+                <img src={url} alt='image'  loading="lazy"  />
+                <div className="swiper-lazy-preloader"></div>
               </div>
             </SwiperSlide>
           )
       })}
     </Swiper>
+    </div>
     </div>
   );
 };
