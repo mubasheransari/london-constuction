@@ -9,11 +9,17 @@
         margin-bottom: 30px;
         @media (max-width:767px) {
             font-size: 26px;
+           
             
         }
     }
     .footer_main {
         display: flex;
+
+        @media (max-width:767px) {
+            display: block;
+            
+        }
 
         .flex_one {
             flex: 1;
@@ -23,6 +29,11 @@
             font-weight: 500;
             font-size: 24px;
             color: #fff;
+
+            @media (max-width:767px) {
+                margin-top: 20px;
+                
+            }
         }
 
         .logo{
@@ -34,6 +45,11 @@
             img {
                 width: 200px;
                 border-radius: 98px;
+
+                @media (max-width:1200px) {
+                    width: 150px;
+                    
+                }
             }
         }
 
@@ -72,6 +88,12 @@
         align-items: center;
         border-top: 1px solid;
         padding: 20px;
+
+        @media (max-width:767px) {
+            display: block;
+            padding: 10px 0px;
+            
+        }
 
         @media (max-width:767px) {
             margin-top: 20px;
