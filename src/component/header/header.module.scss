@@ -1,16 +1,15 @@
 .main_container {
-    background-color: #fff;
-    color: #000;
-    border-bottom: 1px solid #000;
-    background-image: url('https://www.lilyhomes.com.au/wp-content/uploads/2020/03/jasper.jpg');
-    background-size: cover;
-    height: 500px;
-    background-position: center;
     position: relative;
 
-    @media (max-width:767px) {
-        height: 300px;
-        
+    .myVideo{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+
+        @media (max-width:767px) {
+            height: 350px;
+            
+        }
     }
 
     .tag_line{
@@ -29,6 +28,7 @@
 
         img{
             width: 150px;
+            border-radius: 81px;
 
             @media (max-width:767px) {
                 width: 80px;
@@ -121,6 +121,7 @@
 
                 @media (max-width:767px) {
                     width: 34px;
+                    border-radius: 50px;
                     
                 }
             }

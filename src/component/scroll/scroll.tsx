@@ -19,7 +19,7 @@ const Scroll = (props: Props) => {
         <div className={style.scroll_page_wrap}>
         <div className={style.scroll_box}>
         <Animator animation={MoveOut(-1000, -500)}>
-            <img src='pexels-pixabay-280222.jpg' width={'auto'} height={'300px'} />
+            <img src='./southshore-pexels-heyho.jpg' width={'auto'} height={'300px'} />
         </Animator>
         </div>
         <div className={style.scroll_box}>
@@ -42,7 +42,7 @@ const Scroll = (props: Props) => {
      <div className={style.scroll_page_wrap} >
      <div className={style.scroll_box}>
      <Animator animation={MoveOut(1000, 500)}>
-     <img src='./pexels-binyaminmellish-186077.jpg' width={'auto'} height={'300px'} />
+     <img src='./southshore-pexels-olgalioncat.jpg' width={'auto'} height={'300px'} />
      </Animator>
      </div>
      </div>

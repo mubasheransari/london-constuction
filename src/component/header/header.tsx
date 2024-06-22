@@ -13,14 +13,15 @@ const Header = (props: Props) => {
     
   return (
     <div className={style.main_container}>
+   
+    <div >
        <p className={style.tag_line}>
-        {/* Building Your Dreams into Reality */}
-        <img src="https://www.lilyhomes.com.au/wp-content/uploads/2020/02/lily-icon.png" />
+        <img src="./southshore_logo.jpg" alt='logo' />
         </p>
     <div className={style.header_container}>
       <Link href='/' className={style.brand_logo}>
         <p className={style.logo}>
-            <img src="https://www.lilyhomes.com.au/wp-content/uploads/2020/02/lily-icon.png" />
+            <img src="./southshore_logo.jpg" alt='logo' />
         </p>
         </Link>
         <div className={style.social_links}>
@@ -46,7 +47,12 @@ const Header = (props: Props) => {
         </div>
         </div>
         </div>
-  )
+        <video autoPlay muted loop className={style.myVideo}>
+        {/* <source src="./london_video.mp4" type="video/mp4" /> */}
+        Your browser does not support HTML5 video.
+        </video>
+        </div>
+      )
 }
 
 export default Header
