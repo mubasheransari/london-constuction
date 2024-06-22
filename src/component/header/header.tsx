@@ -25,10 +25,10 @@ const Header = (props: Props) => {
         </p>
         </Link>
         <div className={style.social_links}>
-            <p><FacebookIcon /></p>
-            <p><InstagramIcon /></p>
-            <p><Twitter /></p>
-            <p><LinkedIn /></p>
+            <p><FacebookIcon fontSize='large' /></p>
+            <p><Twitter fontSize='large' /></p>
+            <p><InstagramIcon fontSize='large' /></p>
+            <p><LinkedIn fontSize='large' /></p>
         </div>
         <div className={style.heading}>
           <p className={style.text}>South Shore</p>
@@ -48,7 +48,7 @@ const Header = (props: Props) => {
         </div>
         </div>
         <video autoPlay muted loop className={style.myVideo}>
-        {/* <source src="./london_video.mp4" type="video/mp4" /> */}
+        <source src="./video_southshore.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
         </video>
         </div>
