@@ -11,12 +11,36 @@
     
   }
   .swiper-button-prev::after {
-      content: '';
+      /* content: '\003C'; */
+      font-size: 36px;
   }
   .swiper-button-next{
     color: #fff;
   }
   .swiper-button-next::after {
-    content: '';
+    /* content: ''; */
+    font-size: 36px;
 }
 }
+
+.about_swiper {
+  .swiper-button-prev {
+    color: #fff;
+
+    
+  }
+  .swiper-button-prev::after {
+      content: '\2190';
+      font-size: 36px;
+      color: #000;
+  }
+  .swiper-button-next{
+    color: #fff;
+  }
+  .swiper-button-next::after {
+    content: '\2192';
+    font-size: 36px;
+    color: #000;
+}
+}
+

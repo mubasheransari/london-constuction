@@ -7,7 +7,16 @@
     }
 
 }
+
+.selected_item {
+    background-color: grey;
+
+    li{
+        color: #fff;
+    }
+}
 .menu_list{
+    
   
     a{
         text-decoration: none;
@@ -15,4 +24,34 @@
       
     }
     
+
 }
+
+    
+.menu {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 0px;
+   
+    
+    ul {
+        padding: 0px;
+        li {
+            text-align: center !important;
+            justify-content: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+    }
+}
+
+.material_paper {
+    width: 100%;
+    max-width: 1300px;
+    background-color: rgba(255, 255, 255,.7);
+    left: 0px !important;
+    top: 90px !important;
+  
+}
+
+

@@ -1,4 +1,4 @@
-"use client"
+  "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, } from 'swiper/modules';
 import { Pagination } from 'swiper/modules';
@@ -6,9 +6,10 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/css';
 import Link from 'next/link';
-import style from './imagesSwiper.module.scss'
+import style from './aboutSwiper.module.scss'
 
 type Iprops= {
+    toggle:()=>void
  
 }
 
@@ -22,7 +23,7 @@ const productData =[
 
 ]
 
-const ImageSlider = ({}:Iprops) => {
+const AboutImageSlider = ({toggle}:Iprops) => {
 
   return (
     <div className={style.main_container}>
@@ -35,7 +36,7 @@ const ImageSlider = ({}:Iprops) => {
       spaceBetween={10}
       slidesPerView={'auto'}
       // className={style.swiper}
-      className='swiper'
+      className='about_swiper'
       autoplay={{
         delay: 1500,
       }}
@@ -48,8 +49,8 @@ const ImageSlider = ({}:Iprops) => {
           spaceBetween: 0,
         },
         768: {
-          slidesPerView: 3,
-          spaceBetween: 10,
+          slidesPerView: 1,
+          spaceBetween: 0,
         },
         
       }}
@@ -57,7 +58,7 @@ const ImageSlider = ({}:Iprops) => {
       {productData && productData.length >0 && productData.map((item,index)=>{
          const {url} = item
           return(
-            <SwiperSlide key ={index+1}>
+            <SwiperSlide key ={index+1} onClick={()=>toggle()}>
               <div className={style.card}>
                 <img src={url} alt='image'  loading="lazy"  />
                 <div className="swiper-lazy-preloader"></div>
@@ -71,4 +72,4 @@ const ImageSlider = ({}:Iprops) => {
   );
 };
 
-export default ImageSlider;
+export default AboutImageSlider;    

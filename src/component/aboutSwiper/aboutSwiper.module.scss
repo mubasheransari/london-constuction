@@ -13,7 +13,7 @@
     }
 
     .swiper_container {
-        max-width: 1300px;
+        max-width: 600px;
         margin-top: 20px;
         margin-bottom: 20px;
         display: flex;
@@ -21,17 +21,18 @@
         margin-inline: auto;
     
         @media (max-width:767px) {
-            max-width: 375px
+            // max-width: 375px
             
         }
     
         @media (max-width:375px) {
-            max-width: 370px
+            // max-width: 370px
             
         }
     .card {
-        max-width: 415px;
-        height: 350px;
+        width: 100%;
+        max-width: 650px;
+        height: 550px;
         @media (max-width:767px) {
             width: 100%;
             height: 500px;
@@ -40,7 +41,7 @@
     
         img {
             width: 100%;
-            height: 350px;
+            height: 550px;
             object-fit: cover;
     
             @media (max-width:767px) {

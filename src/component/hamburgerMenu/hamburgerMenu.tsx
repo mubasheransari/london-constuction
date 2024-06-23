@@ -5,31 +5,24 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import IconButton from "@mui/material/IconButton";
+import CloseIcon from '@mui/icons-material/Close';
 import Link from "next/link";
 import style from "./hamburgerMenu.module.scss"
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useState } from "react";
 
 const menuList = [
     {name:'Home', link:'/'},{name:'About',link:'/about'},
     {
     name:'Services',
-    link:'',
-    sub_link:[
-        {sub_name:'Design & Build',sub_link:''},
-        {sub_name:'Shop Fitting',sub_link:''},
-        {sub_name:'Project Management',sub_link:''},
-        {sub_name:'Maintaince',sub_link:''},
-    ]},
+    link:'/services'},
     {name:'Gallery',link:'/gallery'},
     {name:'Contact us',link:'/contact'}
   ]
   
 
 export default function HamburgerMenu() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [selected,setSelected] = useState(0)
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -48,7 +41,7 @@ export default function HamburgerMenu() {
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
         >
-          <MenuIcon />
+          {open ? <CloseIcon />:<MenuIcon />}
         </IconButton>
       </Box>
       <Menu
@@ -57,37 +50,21 @@ export default function HamburgerMenu() {
         open={open}
         onClose={handleClose}
         // onClick={handleClose}
+        classes={{
+          root: style.menu,
+          paper:style.material_paper
+        }}
+       
        
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
         {menuList.map((item,index)=>{
             return  (
-                <div className={style.menu_list} key={'list'+ index}>
-                {item.name !== 'Services' ?
+                <div className={`${style.menu_list} ${selected == index? style.selected_item:''} `} key={'list'+ index} onClick={()=>setSelected(index)} >
                 <Link href={item.link}>
-                <MenuItem onClick={handleClose}>{item.name}</MenuItem>
-                </Link>:
-                <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1-content"
-                  id="panel1-header"
-                >
-                  {item.name}
-                </AccordionSummary>
-                {item.sub_link?.map((val,index)=>{
-                    return(
-                        <AccordionDetails key={'sub'+ index}  onClick={handleClose}>
-                            <Link href="/services">{val.sub_name}</Link>
-                        </AccordionDetails>
-
-                    )
-
-                })}
-                 </Accordion>
-            }
-                
+                <MenuItem  onClick={handleClose}>{item.name}</MenuItem>
+                </Link>
                 </div>
             )
         })}
