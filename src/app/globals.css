@@ -14,6 +14,8 @@
       /* content: '\003C'; */
       font-size: 36px;
   }
+
+ 
   .swiper-button-next{
     color: #fff;
   }
@@ -21,9 +23,26 @@
     /* content: ''; */
     font-size: 36px;
 }
+
+@media (max-width:767px) {
+
+  .swiper-button-prev::after {
+    /* content: '\003C'; */
+    font-size: 24px;
+}
+
+.swiper-button-next::after {
+  /* content: ''; */
+  font-size: 24px;
+}
+  
+}
+
+
 }
 
 .about_swiper {
+  margin: 0px 10px;
   .swiper-button-prev {
     color: #fff;
 
@@ -33,7 +52,9 @@
       content: '\2190';
       font-size: 36px;
       color: #000;
+      
   }
+  
   .swiper-button-next{
     color: #fff;
   }
@@ -42,5 +63,28 @@
     font-size: 36px;
     color: #000;
 }
+
+.swiper-pagination-bullet {
+  background-color: #000;
+  opacity: 1;
+  width: 5px;
+  height: 5px;
+
+  
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+  width: 8px;
+  height: 8px;
+  /* padding: 5px; */
+}
+
+.swiper-pagination-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
 

@@ -2,7 +2,7 @@
     width: 100%;
 
     .about_top{
-        max-width: 75%;
+        max-width: 80%;
         margin: auto;
 
         @media (max-width:767px) {
@@ -45,7 +45,7 @@
             flex-wrap: wrap;
             gap:10px;
 
-            @media (max-width:1500px) {
+            @media (max-width:1050px) {
                 display: block;
                 
             }
@@ -68,7 +68,7 @@
                 }
 
                 .introduction_txt {
-                    font-size: 18px;
+                    font-size: 16px;
                 }
     
             }
@@ -77,12 +77,12 @@
             margin-top: 5rem;
 
             .feature_sub_heading {
-                font-size: 22px;
+                font-size: 16px;
                 font-weight: 700;
 
             }
             .feature_text {
-                font-size: 18px;
+                font-size: 16px;
                 margin-top: 2rem;
 
             }
@@ -104,8 +104,8 @@
             position: relative;
 
             input {
-                width: 50%;
-                padding: 10px 32px;
+                width: 60%;
+                padding: 10px 40px;
                 border-radius: 5px;
 
                 @media (max-width:767px) {
@@ -116,7 +116,7 @@
             .search_icon{
                 position: absolute;
                 top: 12px;
-                left: 4px;
+                left: 14px;
                 color: #000;
             }
         }

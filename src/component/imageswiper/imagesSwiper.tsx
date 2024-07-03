@@ -13,12 +13,17 @@ type Iprops= {
 }
 
 const productData =[
-    {url:'./pexels-binyaminmellish-186077.jpg'},
-    {url:'./pexels-binyaminmellish-1396122.jpg'},
-    {url:'./pexels-emrecan-2079249.jpg'},
-    {url:'./pexels-pixabay-280222.jpg'},
-    {url:'./pexels-thgusstavo-2102587.jpg'},
-    {url:'./pexels-binyaminmellish-186077.jpg'},
+    {url:'./south-pexels-heyho-01.jpg'},
+    {url:'./south-pexels-heyho-02.jpg'},
+    {url:'./south-pexels-heyho-03.jpg'},
+    {url:'./south-pexels-heyho-04.jpg'},
+    {url:'./south-pexels-heyho-05.jpg'},
+    {url:'./south-pexels-heyho-06.jpg'},
+    {url:'./south-pexels-monica-07.jpg'},
+    {url:'./south-pexels-olgalioncat-08.jpg'},
+    {url:'./south-pexels-pavel-danilyuk-09.jpg'},
+    {url:'./south-pexels-tima-miroshnichenko-10.jpg'},
+    {url:'./southshare-paints-pixabay.jpg'},
 
 ]
 

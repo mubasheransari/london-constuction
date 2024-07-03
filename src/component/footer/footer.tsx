@@ -42,13 +42,13 @@ const Footer = (props: Props) => {
               <div>
                 <p className={style.sub_heading}>Design & Construction</p>
                 <p>
-                abc building street 205,<br/> Empire Estate,London
+                Empire building street 205,<br/> Empire Estate,London
                 </p>
               </div>
               <div>
               <p className={style.sub_heading}>Maintenance</p>
                 <p>
-                xyz building street 105,<br/> Mayfair Estate,London
+                Imperial building street 105,<br/> Mayfair Estate,London
                 </p>
               </div>
               <div>

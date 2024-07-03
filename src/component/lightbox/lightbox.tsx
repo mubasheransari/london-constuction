@@ -3,6 +3,14 @@ import React, { useEffect, useState } from "react";
 import AboutImageSlider from "../aboutSwiper/aboutSwiper";
 import FsLightbox from "fslightbox-react";
 
+const productData =[
+	'./south-pexels-heyho-01.jpg','./south-pexels-heyho-02.jpg','./south-pexels-heyho-03.jpg','./south-pexels-heyho-04.jpg',
+	'./south-pexels-heyho-05.jpg','./south-pexels-heyho-06.jpg','./south-pexels-monica-07.jpg','./south-pexels-olgalioncat-08.jpg',
+	'./south-pexels-pavel-danilyuk-09.jpg','./south-pexels-tima-miroshnichenko-10.jpg',
+	'./southshare-paints-pixabay.jpg',
+  
+  ]
+
 
 function Lightbox() {
 	// To open the lightbox change the value of the "toggler" prop.
@@ -11,20 +19,12 @@ function Lightbox() {
    
 	return (
 		<>
-			{/* <button onClick={() => setToggler(!toggler)}>
-				Toggle Lightbox
-			</button> */}
 			<AboutImageSlider toggle={()=>setToggler(!toggler)} />
 			 <FsLightbox
 				toggler={toggler}
-				sources={[
-					'https://i.imgur.com/fsyrScY.jpg',
-					'./pexels-thgusstavo-2102587.jpg',
-					'./southshore-pexels-heyho.jpg',
-					'./southshore-pexels-olgalioncat.jpg',
-					'./pexels-binyaminmellish-1396122.jpg',
-					'./pexels-emrecan-2079249.jpg'
-				]}
+				sources={
+					productData
+					}
 			/>
 		 </>
 	);

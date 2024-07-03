@@ -25,10 +25,10 @@ const Header = (props: Props) => {
         </p>
         </Link>
         <div className={style.social_links}>
-            <p><FacebookIcon fontSize='large' /></p>
-            <p><Twitter fontSize='large' /></p>
-            <p><InstagramIcon fontSize='large' /></p>
-            <p><LinkedIn fontSize='large' /></p>
+            <p><FacebookIcon /></p>
+            <p><Twitter /></p>
+            <p><InstagramIcon /></p>
+            <p><LinkedIn /></p>
         </div>
         <div className={style.heading}>
           <p className={style.text}>South Shore</p>

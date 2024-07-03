@@ -68,6 +68,15 @@
 
             p{
                 cursor: pointer;
+
+                svg {
+                    font-size: 36px;
+
+                    @media (max-width:1200px) {
+                        font-size: 24px;
+                        
+                    }
+                }
             }
 
             @media (max-width:767px) {
@@ -99,7 +108,7 @@
                 font-size: 32px;
                 margin-bottom: 0px;
                 line-height: 1;
-                @media (max-width:767px) {
+                @media (max-width:1200px) {
                     font-size: 18px;
                 }
 
@@ -111,7 +120,7 @@
             line-height: 1;
             text-wrap: nowrap;
 
-            @media (max-width:767px) {
+            @media (max-width:1200px) {
                 font-size: 10px;
                 
             }
@@ -138,7 +147,7 @@
                 font-size: 32px;
                 display: none;
 
-                @media (max-width:1200px) {
+                @media (max-width:1050px) {
                     display: block;
                     font-size: 24px;
                 }
@@ -160,7 +169,7 @@
                     text-decoration: underline;
                 }
 
-                @media (max-width:1200px) {
+                @media (max-width:1050px) {
                     display: none;
                     
                 }
