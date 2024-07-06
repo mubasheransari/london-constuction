@@ -13,7 +13,7 @@
     }
 
     .swiper_container {
-        max-width: 600px;
+        max-width: 650px;
         margin-top: 20px;
         margin-bottom: 20px;
         display: flex;
@@ -31,7 +31,7 @@
         }
     .card {
         width: 100%;
-        max-width: 650px;
+        // max-width: 650px;
         height: 550px;
         @media (max-width:767px) {
             width: 100%;

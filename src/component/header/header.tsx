@@ -31,7 +31,7 @@ const Header = (props: Props) => {
             <p><LinkedIn /></p>
         </div>
         <div className={style.heading}>
-          <p className={style.text}>South Shore</p>
+          <p className={style.text}>Southshore</p>
           <p className={style.tagLine}>Building Your Dreams into Reality</p>
           </div>
         

@@ -64,13 +64,13 @@
         .social_links {
             flex: 1;
             display: flex;
-            gap:20px;
+            gap:30px;
 
             p{
                 cursor: pointer;
 
                 svg {
-                    font-size: 36px;
+                    font-size: 30px;
 
                     @media (max-width:1200px) {
                         font-size: 24px;
