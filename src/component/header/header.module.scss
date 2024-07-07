@@ -107,9 +107,10 @@
             .text{
                 font-size: 32px;
                 margin-bottom: 0px;
-                line-height: 1;
+                line-height: 1.2;
                 @media (max-width:1200px) {
                     font-size: 18px;
+                    text-wrap: nowrap;
                 }
 
                

@@ -22,7 +22,7 @@ const HomeLayout = (props: Props) => {
       <div className={style.about_txt}>
         <p className={style.sub_heading}>About us</p>
         <p className={style.introduction_txt}>
-        Welcome to Southshore, where innovation meets craftsmanship. We are dedicated to transforming your vision into tangible 
+        Welcome to Southshore Projects, where innovation meets craftsmanship. We are dedicated to transforming your vision into tangible 
         structures with unparalleled quality and precision. Our team of experts ensures every project is executed to the highest standards, 
         making us a leader in the construction industry.
         </p>
