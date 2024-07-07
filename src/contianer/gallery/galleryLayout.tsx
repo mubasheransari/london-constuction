@@ -54,17 +54,33 @@ const itemData = [
     },
   ];
 
+  const productData =[
+    {url:'./south-pexels-heyho-01.jpg'},
+    {url:'./south-pexels-heyho-02.jpg'},
+    {url:'./south-pexels-heyho-03.jpg'},
+    {url:'./south-pexels-heyho-04.jpg'},
+    {url:'./south-pexels-heyho-05.jpg'},
+    {url:'./south-pexels-heyho-06.jpg'},
+    {url:'./south-pexels-monica-07.jpg'},
+    {url:'./south-pexels-olgalioncat-08.jpg'},
+    {url:'./south-pexels-pavel-danilyuk-09.jpg'},
+    {url:'./south-pexels-tima-miroshnichenko-10.jpg'},
+    {url:'./southshare-paints-pixabay.jpg'},
+
+]
+
 export default function GalleryLayout() {
   return (
     <div className={style.gallery_container}>
     <p  className={`text-center mt-3 ${style.heading}`}>Our Gallery</p>
     <ImageList  cols={3} sx={{ width: '100%', maxWidth:'1600px', margin:'auto', marginTop:'20px'}} >
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
+      {productData.map((item) => (
+        <ImageListItem key={item.url} classes={{img:style.list_img}}>
+         
           <img
-            srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-            src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-            alt={item.title}
+            srcSet={`${item.url}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+            src={`${item.url}?w=164&h=164&fit=crop&auto=format`}
+            alt={'image'}
             loading="lazy"
           />
         </ImageListItem>
