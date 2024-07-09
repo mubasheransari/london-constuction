@@ -22,7 +22,8 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
     "react-scroll-motion": "^0.3.3",
-    "swiper": "^11.1.4"
+    "swiper": "^11.1.4",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/fslightbox-react": "^1.7.7",

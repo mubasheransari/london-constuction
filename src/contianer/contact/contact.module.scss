@@ -1,6 +1,7 @@
 $blue:#467FF7;
 
 .contact_container {
+    color: #000;
 
     .contact_us_container {
         display: flex;
@@ -100,5 +101,32 @@ $blue:#467FF7;
 
         }
     }
+
+.visit_us_container {
+    padding: 10px 10px;
+
+    .visit_heading {
+        font-size: 54px;
+        font-weight: 800;
+        
+    }
+
+    .map_wraper {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .map {
+            flex: 1;
+            display: flex;
+            gap:20px;
+
+            .sub_heading {
+                font-size: 24px;
+                font-weight: 800;
+            }
+        }
+    }
+}
 
 }
