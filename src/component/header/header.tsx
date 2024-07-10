@@ -48,7 +48,7 @@ const Header = (props: Props) => {
         </div>
         </div>
         <video autoPlay muted loop className={style.myVideo}>
-        <source src="./video_southshore.mp4" type="video/mp4" />
+        <source src="./video_southshore.webm" type="video/webm" />
         Your browser does not support HTML5 video.
         </video>
         </div>

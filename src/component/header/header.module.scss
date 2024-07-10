@@ -164,10 +164,13 @@
                 a {
                     text-decoration: none;
                     color: #fff;
+                   
                 }
 
                 a:hover {
                     text-decoration: underline;
+                    text-underline-offset: 10px;
+                    text-decoration-thickness: 3px;
                 }
 
                 @media (max-width:1050px) {
