@@ -5,6 +5,16 @@
     .heading {
         font-size: 32px;
         font-weight: 600;
+
+        @media (max-width:767px) {
+            text-align: center;
+            
+        }
+    }
+
+    .intro_heading {
+        font-weight: 600;
+        font-size: 24px;
     }
 
     .sub_line{

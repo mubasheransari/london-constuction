@@ -26,6 +26,12 @@ $blue:#467FF7;
                     font-size: 48px;
                     
                 }
+
+                @media (max-width:767px) {
+                    font-size: 36px;
+                    text-align: center;
+                    
+                }
             }
 
             .contact_info {
@@ -58,11 +64,18 @@ $blue:#467FF7;
                     margin-bottom: 30px;
                     flex-wrap: wrap;
 
+                    @media (max-width:1050px) {
+                        justify-content: center;
+                        
+                    }
+
                     input, select {
-                        width: 250px;
+                        width: 100%;
 
                         @media (max-width:1050px) {
-                            width: 100%;
+                            // width: 100%;
+                            width: 550px;
+                            max-width: 300px
                             
                         }
                     }
@@ -93,6 +106,11 @@ $blue:#467FF7;
                         border: 1px solid $blue;
 
                     }
+
+                    @media (max-width:767px) {
+                        margin-top: 30px;
+                        
+                    }
                 }
 
             }
@@ -108,6 +126,11 @@ $blue:#467FF7;
     .visit_heading {
         font-size: 54px;
         font-weight: 800;
+
+        @media (max-width:767px) {
+            text-align: center;
+            
+        }
         
     }
 
@@ -120,6 +143,10 @@ $blue:#467FF7;
             flex: 1;
             display: flex;
             gap:20px;
+
+            svg {
+                margin-top: 6px;
+            }
 
             .sub_heading {
                 font-size: 24px;

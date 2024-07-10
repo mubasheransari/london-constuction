@@ -31,10 +31,13 @@ const AboutLayout = (props: Props) => {
   return (
     <div className={style.about_container}>
         <p className={style.heading}>About Us</p>
-        <p>
-            <span className='h4'>Introduction:</span> Welcome to South Shore, where innovation meets craftsmanship. We are dedicated to transforming your vision into tangible structures with unparalleled quality and precision. 
+        <div>
+            <p className={style.intro_heading}>Introduction</p> 
+            <p>
+            Welcome to South Shore, where innovation meets craftsmanship. We are dedicated to transforming your vision into tangible structures with unparalleled quality and precision. 
             Our team of experts ensures every project is executed to the highest standards, making us a leader in the construction industry.
-        </p>
+            </p>
+        </div>
         <ul>
             {features.map((item:any,index)=>{
             return (
