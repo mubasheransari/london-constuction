@@ -1,5 +1,10 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+body {
+  color: #000;
+  font-weight: 400;
+}
+
 .main_class {
   min-height: 54vh;
 }

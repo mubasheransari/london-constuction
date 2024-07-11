@@ -31,7 +31,7 @@ const Header = (props: Props) => {
             <p><LinkedIn /></p>
         </div>
         <div className={style.heading}>
-          <p className={style.text}>Southshore Projects</p>
+          <p className={style.text}>Southshore</p>
           <p className={style.tagLine}>Building Your Dreams into Reality</p>
           </div>
         
@@ -48,7 +48,7 @@ const Header = (props: Props) => {
         </div>
         </div>
         <video autoPlay muted loop className={style.myVideo}>
-        <source src="./video_southshore.webm" type="video/webm" />
+        <source src="./video_southshore.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
         </video>
         </div>

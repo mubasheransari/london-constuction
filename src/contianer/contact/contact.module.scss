@@ -70,7 +70,7 @@ $blue:#467FF7;
                     }
 
                     input, select {
-                        width: 100%;
+                        width: 250px;
 
                         @media (max-width:1050px) {
                             // width: 100%;
@@ -100,6 +100,7 @@ $blue:#467FF7;
                     color: #fff;
                     border: 1px solid $blue;
                     margin-top: 25px;
+                    
 
                     &:hover {
                         background-color: #fff;
