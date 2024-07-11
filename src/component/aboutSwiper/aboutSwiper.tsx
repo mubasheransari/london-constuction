@@ -14,17 +14,17 @@ type Iprops= {
 }
 
 const productData =[
-  {url:'./south-pexels-heyho-01.jpg'},
-  {url:'./south-pexels-heyho-02.jpg'},
-  {url:'./south-pexels-heyho-03.jpg'},
-  {url:'./south-pexels-heyho-04.jpg'},
-  {url:'./south-pexels-heyho-05.jpg'},
-  {url:'./south-pexels-heyho-06.jpg'},
-  {url:'./south-pexels-monica-07.jpg'},
-  {url:'./south-pexels-olgalioncat-08.jpg'},
-  {url:'./south-pexels-pavel-danilyuk-09.jpg'},
-  {url:'./south-pexels-tima-miroshnichenko-10.jpg'},
-  {url:'./southshare-paints-pixabay.jpg'},
+  {url:'./south-pexels-heyho-01.jpeg'},
+  {url:'./south-pexels-heyho-02.jpeg'},
+  {url:'./south-pexels-heyho-03.jpeg'},
+  {url:'./south-pexels-heyho-04.jpeg'},
+  {url:'./south-pexels-heyho-05.jpeg'},
+  {url:'./south-pexels-heyho-06.jpeg'},
+  {url:'./south-pexels-monica-07.jpeg'},
+  {url:'./south-pexels-olgalioncat-08.jpeg'},
+  {url:'./south-pexels-pavel-danilyuk-09.jpeg'},
+  {url:'./south-pexels-tima-miroshnichenko-10.jpeg'},
+  {url:'./southshare-paints-pixabay.jpeg'},
 
 ]
 
