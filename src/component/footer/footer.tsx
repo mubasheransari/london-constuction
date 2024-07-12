@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
     <div className={style.footer_container}>
         <div className={style.footer_main}>
           <div className={`${style.logo}`}>
-            <img src='./southshore_blue_icon.jpg' alt='logo' />
+            <img src='./southshore_blue_icon.jpeg' alt='logo' />
             </div>
           <div className={style.flex_one}>
             <div className='d-flex align-items-center' style={{gap:'20px'}}>

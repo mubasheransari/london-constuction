@@ -40,7 +40,6 @@ const AboutImageSlider = ({toggle}:Iprops) => {
       navigation={true}
       spaceBetween={10}
       slidesPerView={'auto'}
-      // className={style.swiper}
       className='about_swiper'
       autoplay={{
         delay: 1500,

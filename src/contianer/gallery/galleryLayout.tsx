@@ -3,7 +3,6 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import style from "./gallery.module.scss"
 
-
   const productData =[
     {url:'./south-pexels-heyho-01.jpeg'},
     {url:'./south-pexels-heyho-02.jpeg'},

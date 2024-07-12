@@ -70,6 +70,9 @@ $blue:#467FF7;
                     }
 
                     input, select {
+                        -moz-appearance: none; 
+                        -webkit-appearance: none; 
+                        appearance: none;
                         width: 250px;
 
                         @media (max-width:1050px) {
