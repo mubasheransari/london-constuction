@@ -16,12 +16,12 @@ const Header = (props: Props) => {
    
     <div >
        <p className={style.tag_line}>
-        <img src="./southshore_white_logo.jpeg" alt='logo' />
+        <img src="./southshore_blue_icon.jpeg" alt='logo' />
         </p>
     <div className={style.header_container}>
       <Link href='/' className={style.brand_logo}>
         <p className={style.logo}>
-            <img src="./southshore_white_logo.jpeg" alt='logo' />
+            <img src="./southshore_blue_icon.jpeg" alt='logo' />
         </p>
         </Link>
         <div className={style.social_links}>
