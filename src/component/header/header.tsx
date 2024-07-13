@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import { useRef, useEffect } from 'react';
 import style from './header.module.scss'
 import Link from 'next/link';
 import HamburgerMenu from '../hamburgerMenu/hamburgerMenu';
@@ -10,6 +11,17 @@ type Props = {}
 
 
 const Header = (props: Props) => {
+  const videoRef = useRef<any>();
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.muted = true;
+      video.play().catch((error:string) => {
+        console.error('Autoplay was prevented:', error);
+      });
+    }
+  }, [videoRef]);
     
   return (
     <div className={style.main_container}>
@@ -47,7 +59,7 @@ const Header = (props: Props) => {
         </div>
         </div>
         </div>
-        <video autoPlay muted loop className={style.myVideo}>
+        <video ref={videoRef} autoPlay muted loop playsInline className={style.myVideo}>
         <source src="./video_southshore_2.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
         </video>
