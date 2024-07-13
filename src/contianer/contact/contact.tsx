@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import style from './contact.module.scss'
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -12,6 +12,8 @@ type Props = {}
 const options = ['New project Enquiry','Maintenance Enquiry','Product Enquiry','Supplier Enquiry','Career Enquiry','Collaboration']
 
 const ContactComp = (props: Props) => {
+
+    const [btnDisabled,setBtnDisabled] = useState(false)
 
     const validationSchema = yup.object({
         name: yup.string().min(3, 'must be at least 3 characters long').required('First Name is required'),
@@ -31,7 +33,12 @@ const ContactComp = (props: Props) => {
         },
         validationSchema,
         onSubmit: (values:any) => {
-          alert(JSON.stringify(values, null, 2));
+        alert(JSON.stringify(values, null, 2));
+        setBtnDisabled(true)
+        setTimeout(()=>{
+            setBtnDisabled(false)
+
+        },2000)
         },
       });
 
@@ -78,11 +85,12 @@ const ContactComp = (props: Props) => {
                      type="text"
                      onChange={formik.handleChange}
                      value={formik.values.name}
+                     onBlur={formik.handleBlur}
                      className='border border-1 p-3' 
                      placeholder='Your Name' 
                      />
                      {/* @ts-ignore */}
-                      {formik.errors.name && <p className='text-danger position-absolute'>{formik.errors.name}</p>}
+                      {formik.submitCount > 0 && formik.errors.name && <p className='text-danger position-absolute'>{formik.errors.name}</p>}
                      </div>
                     <div>
                     <input
@@ -91,10 +99,11 @@ const ContactComp = (props: Props) => {
                     type="email"
                     onChange={formik.handleChange}
                     value={formik.values.email}
+                    onBlur={formik.handleBlur}
                     className='border border-1 p-3' 
                     placeholder='Your Email' />
                      {/* @ts-ignore */}
-                     {formik.errors.email && <p className='text-danger position-absolute'>{formik.errors.email}</p>}
+                     {formik.submitCount > 0 && formik.errors.email && <p className='text-danger position-absolute'>{formik.errors.email}</p>}
                      </div>
                     </div>
                     <div className={style.input_wrap}>
@@ -105,10 +114,11 @@ const ContactComp = (props: Props) => {
                     type="tel"
                     onChange={formik.handleChange}
                     value={formik.values.phone} 
+                    onBlur={formik.handleBlur}
                     className='border border-1 p-3' 
                     placeholder='Phone Number' />
                      {/* @ts-ignore */}
-                     {formik.errors.phone && <p className='text-danger position-absolute'>{formik.errors.phone}</p>}
+                     {formik.submitCount > 0 && formik.errors.phone && <p className='text-danger position-absolute'>{formik.errors.phone}</p>}
                     </div>
                     <div>
                     <select 
@@ -116,6 +126,7 @@ const ContactComp = (props: Props) => {
                     name="enquiry"
                     onChange={formik.handleChange}
                     value={formik.values.enquiry}
+                    onBlur={formik.handleBlur}
                     className='border border-1 p-3'
                      >
                     <option value="">Select the Enquiry</option>
@@ -128,7 +139,7 @@ const ContactComp = (props: Props) => {
                     })}
                     </select>
                      {/* @ts-ignore */}
-                    {formik.errors.enquiry && <p className='text-danger position-absolute'>{formik.errors.enquiry}</p>}
+                    {formik.submitCount > 0 && formik.errors.enquiry && <p className='text-danger position-absolute'>{formik.errors.enquiry}</p>}
                     </div>
                     </div>
                     <div>
@@ -138,12 +149,13 @@ const ContactComp = (props: Props) => {
                     placeholder='Message' 
                     onChange={formik.handleChange}
                     value={formik.values.message}  
+                    onBlur={formik.handleBlur}
                     className={`w-100 p-2 ${style.text_area}`} 
                     />
                      {/* @ts-ignore */}
-                     {formik.errors.message && <p className='text-danger position-absolute'>{formik.errors.message}</p>}
+                     {formik.submitCount > 0 && formik.errors.message && <p className='text-danger position-absolute'>{formik.errors.message}</p>}
                     </div>
-                    <button type='submit' className={`${style.send_btn}`}>Send</button>
+                    <button type='submit' disabled={btnDisabled} className={`${style.send_btn}`}>Send</button>
                     </form>
                 </div>
             </div>
