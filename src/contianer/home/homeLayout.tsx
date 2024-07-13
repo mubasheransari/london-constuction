@@ -41,15 +41,6 @@ const HomeLayout = (props: Props) => {
       </div>
      </div>
      <ImageSlider />
-     <div className={style.search_bar}>
-      <div className={style.input_wrap}>
-      <input type='text' placeholder='About Us'/>
-      <span className={style.search_icon}>
-      <SearchIcon />
-      </span>
-      </div>
-
-     </div>
     </div>
   )
 }

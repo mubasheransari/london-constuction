@@ -17,7 +17,7 @@
             line-height: 1em;
             letter-spacing: -3px;
             color: #000;
-            margin: 10px 5px 25px 5px;
+            margin: 10px 5px 30px 0px;
             position: relative;
             animation-name: heading;
             animation-duration: 3s;
@@ -38,9 +38,10 @@
     
         .divider {
             width: 100%;
-            max-width: 100px;
+            max-width: 60px;
             border-bottom: 3px solid #000;
-            margin-left: 12px;
+            margin-left: 0px;
+            margin-bottom: 0px;
            
             @media (max-width:767px) {
                 max-width: 50px;
@@ -53,7 +54,7 @@
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            gap:10px;
+            gap:20px;
 
             @media (max-width:1050px) {
                 display: block;
@@ -61,7 +62,7 @@
             }
     
             .slider {
-                flex:1;
+                // flex:1;
     
             }
             .about_txt {
@@ -70,6 +71,7 @@
                 .sub_heading {
                     font-size: 23px;
                     font-weight: 700;
+                    font-family: serif;
                    
 
                     @media (max-width:767px) {
@@ -87,7 +89,7 @@
             }
         }
         .features_wrap{
-            margin-top: 5rem;
+            margin-top: 4rem;
 
             .feature_sub_heading {
                 font-size: 16px;
@@ -103,39 +105,4 @@
 
     }
 
-    .search_bar {
-        background-color: #000;
-        color: #fff;
-        padding:60px 160px;
-
-        @media (max-width:767px) {
-            padding: 30px 10px;
-            
-        }
-
-        .input_wrap {
-            position: relative;
-
-            input {
-                width: 60%;
-                padding: 10px 40px;
-                border-radius: 5px;
-
-                @media (max-width:767px) {
-                    width: 70%;
-                    
-                }
-            }
-            .search_icon{
-                position: absolute;
-                top: 12px;
-                left: 14px;
-                color: #000;
-            }
-        }
-
-        
-    }
-   
-  
 }

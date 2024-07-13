@@ -50,6 +50,9 @@ body {
   margin: 0px 10px;
   .swiper-button-prev {
     color: #fff;
+    width: 70px;
+    display: flex;
+    justify-content: flex-end;
 
     
   }
@@ -62,6 +65,9 @@ body {
   
   .swiper-button-next{
     color: #fff;
+    width: 70px;
+    display: flex;
+    justify-content: flex-start;
   }
   .swiper-button-next::after {
     content: '\2192';

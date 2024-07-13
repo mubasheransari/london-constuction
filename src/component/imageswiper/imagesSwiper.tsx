@@ -44,8 +44,8 @@ const ImageSlider = ({}:Iprops) => {
         delay: 1500,
       }}
       loop={true}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      // onSlideChange={() => console.log('slide change')}
+      // onSwiper={(swiper) => console.log(swiper)}
       breakpoints={{
         1: {
           slidesPerView: 1,

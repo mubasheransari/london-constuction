@@ -6,12 +6,22 @@ import { Twitter, LinkedIn } from '@mui/icons-material';
 import Link from 'next/link';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import SearchIcon from '@mui/icons-material/Search';
 
 type Props = {}
 
 const Footer = (props: Props) => {
   return (
     <div className={style.footer_container}>
+      <div className={style.search_bar}>
+      <div className={style.input_wrap}>
+      <input type='text' placeholder='About Us'/>
+      <span className={style.search_icon}>
+      <SearchIcon />
+      </span>
+      </div>
+
+     </div>
         <div className={style.footer_main}>
           <div className={`${style.logo}`}>
             <img src='./southshore_blue_icon.jpeg' alt='logo' />

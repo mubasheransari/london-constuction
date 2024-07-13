@@ -105,10 +105,13 @@
             padding-bottom: 5px;
 
             .text{
-                font-size: 32px;
+                font-size: 28px;
                 margin-bottom: 0px;
-                line-height: 1.2;
+                line-height: 1.6;
+                font-weight: 600;
+                text-transform: uppercase;
                 @media (max-width:1200px) {
+                    font-size: 26px;
                     font-size: 18px;
                     text-wrap: nowrap;
                 }

@@ -5,7 +5,41 @@
     padding-top: 60px;
 
     @media (max-width:767px) {
-        padding-top: 20px;
+        padding-top: 0px;
+        
+    }
+
+    .search_bar {
+        background-color: #000;
+        color: #fff;
+        padding:60px 160px;
+
+        @media (max-width:767px) {
+            padding: 30px 10px;
+            
+        }
+
+        .input_wrap {
+            position: relative;
+
+            input {
+                width: 60%;
+                padding: 10px 40px;
+                border-radius: 5px;
+
+                @media (max-width:767px) {
+                    width: 70%;
+                    
+                }
+            }
+            .search_icon{
+                position: absolute;
+                top: 12px;
+                left: 14px;
+                color: #000;
+            }
+        }
+
         
     }
 
