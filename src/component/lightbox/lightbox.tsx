@@ -4,10 +4,10 @@ import AboutImageSlider from "../aboutSwiper/aboutSwiper";
 import FsLightbox from "fslightbox-react";
 
 const productData =[
-	'./south-pexels-heyho-01.jpg','./south-pexels-heyho-02.jpg','./south-pexels-heyho-03.jpg','./south-pexels-heyho-04.jpg',
-	'./south-pexels-heyho-05.jpg','./south-pexels-heyho-06.jpg','./south-pexels-monica-07.jpg','./south-pexels-olgalioncat-08.jpg',
-	'./south-pexels-pavel-danilyuk-09.jpg','./south-pexels-tima-miroshnichenko-10.jpg',
-	'./southshare-paints-pixabay.jpg',
+	'./south-pexels-heyho-01.jpeg','./south-pexels-heyho-02.jpeg','./south-pexels-heyho-03.jpeg','./south-pexels-heyho-04.jpeg',
+	'./south-pexels-heyho-05.jpeg','./south-pexels-heyho-06.jpeg','./south-pexels-monica-07.jpeg','./south-pexels-olgalioncat-08.jpeg',
+	'./south-pexels-pavel-danilyuk-09.jpeg','./south-pexels-tima-miroshnichenko-10.jpeg',
+	'./southshare-paints-pixabay.jpeg',
   
   ]
 
