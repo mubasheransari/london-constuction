@@ -60,7 +60,7 @@ const Header = (props: Props) => {
         </div>
         </div>
         <video ref={videoRef} autoPlay muted loop playsInline className={style.myVideo}>
-        <source src="./video_southshore_2.mp4" type="video/mp4" />
+        <source src="./southshore-video_new.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
         </video>
         </div>
