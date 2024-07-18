@@ -34,13 +34,9 @@ const Footer = (props: Props) => {
             <div className={style.links_details}>
               <Link href='/about'><p>About Us</p></Link>
               <Link href='/contact'><p>Contact Us</p></Link>
-              <Link href='/'><p>Our Projects</p></Link>
-              <Link href='/'><p>Privacy Policy</p></Link>
-              <Link href='/'><p>Cookies</p></Link>
-              <Link href='/'><p>Terms and  Conditions</p></Link>
-              <Link href='/'><p>Carrers</p></Link>
-              <Link href='/'><p>Equal Opportunity policy</p></Link>
-              <Link href='/'><p>Modern Slavery Statement</p></Link>
+              <Link href='/projects'><p>Our Projects</p></Link>
+              <Link href='/equal-opportunity-policy'><p>Equal Opportunity policy</p></Link>
+              <Link href='/modern-slavery-statement'><p>Modern Slavery Statement</p></Link>
             </div>
             </div>
           <div className={style.flex_one}>
@@ -52,21 +48,21 @@ const Footer = (props: Props) => {
               <div>
                 <p className={style.sub_heading}>Design & Construction</p>
                 <p>
-                Empire building street 205,<br/> Empire Estate,London
+                Highland House, 165-167<br/>The Broadway, 
                 </p>
               </div>
               <div>
               <p className={style.sub_heading}>Maintenance</p>
                 <p>
-                Imperial building street 105,<br/> Mayfair Estate,London
+                Wimbledon<br/>SW19 1NE
                 </p>
               </div>
               <div>
                 <p>
-                <PhoneIcon fontSize='small' /><span className='ms-2'>T: 020 1111 2222</span>
+                <PhoneIcon fontSize='small' /><span className='ms-2'>T: 020 7740 9165</span>
                 </p>
                 <p>
-                 <EmailIcon fontSize='small'/><span className='ms-2'>Email: info@south-shore.com</span>
+                 <EmailIcon fontSize='small'/><span className='ms-2'>Email: info@southshoreprojects.com</span>
                 </p>
               </div>
             </div>
@@ -101,7 +97,7 @@ const Footer = (props: Props) => {
         </div>
         <div className={style.footer_botom}>
         <div>
-            <p className={style.right_text}>All rights reserved ©south shore projects Ltd Company</p>
+            <p className={style.right_text}>All rights reserved ©southshore projects</p>
 
         </div>
         <div className={style.social_links}>

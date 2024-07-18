@@ -11,10 +11,7 @@ import style from "./gallery.module.scss"
     {url:'./south-pexels-heyho-05.jpeg'},
     {url:'./south-pexels-heyho-06.jpeg'},
     {url:'./south-pexels-monica-07.jpeg'},
-    {url:'./south-pexels-olgalioncat-08.jpeg'},
-    {url:'./south-pexels-pavel-danilyuk-09.jpeg'},
     {url:'./south-pexels-tima-miroshnichenko-10.jpeg'},
-    {url:'./southshare-paints-pixabay.jpeg'},
 
 ]
 

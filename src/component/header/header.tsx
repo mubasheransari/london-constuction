@@ -54,6 +54,7 @@ const Header = (props: Props) => {
             <Link href={'/about'}><p>About</p></Link>
             <Link href='/services'><p>Services</p></Link>
             <Link href={'/gallery'}><p>Gallery</p></Link>
+            <Link href={'/projects'}><p>Projects</p></Link>
             <Link href={'/contact'}><p>Contact us</p></Link>
           </div>
         </div>
