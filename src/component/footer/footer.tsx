@@ -48,18 +48,19 @@ const Footer = (props: Props) => {
               <div>
                 <p className={style.sub_heading}>Design & Construction</p>
                 <p>
-                Highland House, 165-167<br/>The Broadway, 
+                Highland House, 165-167<br/>The Broadway,<br /> 
+                Wimbledon SW19 1NE
+                </p>
+                <p>
                 </p>
               </div>
-              <div>
+              {/* <div>
               <p className={style.sub_heading}>Maintenance</p>
-                <p>
-                Wimbledon<br/>SW19 1NE
-                </p>
-              </div>
+                
+              </div> */}
               <div>
                 <p>
-                <PhoneIcon fontSize='small' /><span className='ms-2'>T: 020 7740 9165</span>
+                <PhoneIcon fontSize='small' /><span className='ms-2'>T:+44 020 7740 9165</span>
                 </p>
                 <p>
                  <EmailIcon fontSize='small'/><span className='ms-2'>Email: info@southshoreprojects.com</span>
