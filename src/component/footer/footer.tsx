@@ -13,7 +13,7 @@ type Props = {}
 const Footer = (props: Props) => {
   return (
     <div className={style.footer_container}>
-      <div className={style.search_bar}>
+      {/* <div className={style.search_bar}>
       <div className={style.input_wrap}>
       <input type='text' placeholder='About Us'/>
       <span className={style.search_icon}>
@@ -21,7 +21,7 @@ const Footer = (props: Props) => {
       </span>
       </div>
 
-     </div>
+     </div> */}
         <div className={style.footer_main}>
           <div className={`${style.logo}`}>
             <img src='./southshore_blue_icon.jpeg' alt='logo' />
@@ -81,13 +81,13 @@ const Footer = (props: Props) => {
                 9:00 AM to 6:00 PM
               </p>
               </div>
-              <div>
+              {/* <div>
               <p className={style.sub_heading}>Maintenance Hours</p>
               <p>
                 Everyday<br/>
                 7:00 AM to 12:00 AM
               </p>
-              </div>
+              </div> */}
 
             </div>
             <div>
