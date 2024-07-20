@@ -16,6 +16,7 @@ const menuList = [
     name:'Services',
     link:'/services'},
     {name:'Gallery',link:'/gallery'},
+    {name:'Projects',link:'/projects'},
     {name:'Contact us',link:'/contact'}
   ]
   
