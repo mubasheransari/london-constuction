@@ -51,8 +51,6 @@ const Footer = (props: Props) => {
                 Highland House, 165-167<br/>The Broadway,<br /> 
                 Wimbledon SW19 1NE
                 </p>
-                <p>
-                </p>
               </div>
               {/* <div>
               <p className={style.sub_heading}>Maintenance</p>

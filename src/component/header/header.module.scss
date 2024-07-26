@@ -165,16 +165,29 @@
                 flex-wrap: wrap;
 
                 a {
-                    text-decoration: none;
+                    display: inline-block;
+                    position: relative;
                     color: #fff;
-                   
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                    text-underline-offset: 10px;
-                    text-decoration-thickness: 3px;
-                }
+                    text-decoration: none;
+                  }
+                  a::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    border-radius: 5px;
+                    height: 0.15em;
+                    bottom: 0;
+                    left: 0;
+                    background: currentcolor;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                  }
+                  a:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                 
+                  }
 
                 @media (max-width:1050px) {
                     display: none;

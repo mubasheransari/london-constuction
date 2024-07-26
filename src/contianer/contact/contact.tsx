@@ -53,10 +53,10 @@ const ContactComp = (props: Props) => {
                 <div className={style.contact_info}>
                     <p className={style.sub_heading}>Get In Touch</p>
                     <p>
-                        <PhoneIcon /> T: 020 1111 2222
+                        <PhoneIcon /> T:+44 020 7740 9165
                     </p>
                     <p>
-                        <EmailIcon /> Email: info@south-shore.com
+                        <EmailIcon /> Email: info@southshoreprojects.com
                     </p>
                 </div>
 
@@ -66,11 +66,11 @@ const ContactComp = (props: Props) => {
                     <p>9:00 AM - 6:00 PM</p>
                 </div>
 
-                <div className={style.contact_info}>
+                {/* <div className={style.contact_info}>
                     <p className={style.sub_heading}>Maintenance Hours</p>
                     <p>Everyday</p>
                     <p>7:00 AM - 12:00 AM</p>
-                </div>
+                </div> */}
 
             </div>
             <div className={style.form_detail}>
@@ -163,7 +163,7 @@ const ContactComp = (props: Props) => {
         <div className={style.visit_us_container}>
             <p className={style.visit_heading}>Visit US</p>
             <div className={style.map_wraper}>
-            <div style={{flex:1}} className={style.map_box}>
+            {/* <div style={{flex:1}} className={style.map_box}>
             <div className={style.map}>
             <LocationOnIcon />
             <div>
@@ -177,7 +177,7 @@ const ContactComp = (props: Props) => {
             </div>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.1374728479873!2d-0.20074162350260846!3d51.41890127179331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608a5388b0b99%3A0x8af1ff383ef71104!2sHighlands%20House%20the%20Broadway%2C%20165%20The%20Broadway%2C%20London%20SW19%201NE%2C%20UK!5e0!3m2!1sen!2s!4v1719985013518!5m2!1sen!2s" width="100%" height="700px" style={{border:'0', margin:'auto'}} loading="lazy" ></iframe>
-            </div>
+            </div> */}
             <div style={{flex:1}} className={style.map_box}>
             <div className={style.map}>
             <LocationOnIcon /> 
@@ -186,10 +186,9 @@ const ContactComp = (props: Props) => {
             Design & Construction:
             </p>
             <p>
-            205 Regent Street<br/>
-            2nd floor, Mayfair,<br/>
-            London, W1B 4HB
-            </p>
+                Highland House, 165-167<br/>The Broadway,<br /> 
+                Wimbledon SW19 1NE
+                </p>
             </div>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.1374728479873!2d-0.20074162350260846!3d51.41890127179331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487608a5388b0b99%3A0x8af1ff383ef71104!2sHighlands%20House%20the%20Broadway%2C%20165%20The%20Broadway%2C%20London%20SW19%201NE%2C%20UK!5e0!3m2!1sen!2s!4v1719985013518!5m2!1sen!2s" width="100%" height="700" style={{border:'0', margin:'auto'}} loading="lazy" ></iframe>
