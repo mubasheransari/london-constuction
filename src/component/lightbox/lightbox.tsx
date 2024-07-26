@@ -4,19 +4,16 @@ import AboutImageSlider from "../aboutSwiper/aboutSwiper";
 import FsLightbox from "fslightbox-react";
 
 const productData =[
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941296/southshare-paints-pixabay_wx6bhf.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941295/south-pexels-monica-07_iyeauu.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941294/southshore-pexels-olgalioncat_zbnge8.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941288/south-pexels-tima-miroshnichenko-10_fnbbmu.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941285/south-pexels-heyho-06_uiubxw.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941284/south-pexels-heyho-05_jgiody.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941278/south-pexels-olgalioncat-08_dwd20e.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941274/south-pexels-heyho-01_ul2bkp.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941272/south-pexels-pavel-danilyuk-09_scavqt.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941263/south-pexels-heyho-02_albve7.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941259/south-pexels-heyho-03_eciurd.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941245/south-pexels-heyho-04_bny2t7.jpeg',
-	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941296/southshore-pexels-heyho_pi6iah.jpeg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025507/south-pexels-olgalioncat-08-min_glhjgp.jpg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025507/south-pexels-tima-miroshnichenko-10-min_j4qr1l.jpg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025506/south-pexels-monica-07-min_zvdujn.jpg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025506/south-pexels-heyho-03-min_ijzqtw.jpg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025506/south-pexels-heyho-02-min_xhui4w.jpg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025506/pexels-olgalioncat-7245328-min_trab4x.jpg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025505/south-pexels-heyho-05-min_qae5vh.jpg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025505/south-pexels-heyho-05-min_qae5vh.jpg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025505/south-pexels-heyho-06-min_uxqhuc.jpg',
+	'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025505/south-pexels-heyho-01-min_u44mec.jpg',
   ]
 
   

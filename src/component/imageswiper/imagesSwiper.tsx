@@ -13,19 +13,19 @@ type Iprops= {
 }
 
 const productData =[
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941296/southshare-paints-pixabay_wx6bhf.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941295/south-pexels-monica-07_iyeauu.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941294/southshore-pexels-olgalioncat_zbnge8.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941288/south-pexels-tima-miroshnichenko-10_fnbbmu.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941285/south-pexels-heyho-06_uiubxw.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941284/south-pexels-heyho-05_jgiody.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941278/south-pexels-olgalioncat-08_dwd20e.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941274/south-pexels-heyho-01_ul2bkp.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941272/south-pexels-pavel-danilyuk-09_scavqt.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941263/south-pexels-heyho-02_albve7.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941259/south-pexels-heyho-03_eciurd.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941245/south-pexels-heyho-04_bny2t7.jpeg'},
-  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941296/southshore-pexels-heyho_pi6iah.jpeg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025507/south-pexels-olgalioncat-08-min_glhjgp.jpg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025507/south-pexels-tima-miroshnichenko-10-min_j4qr1l.jpg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025506/south-pexels-monica-07-min_zvdujn.jpg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025506/south-pexels-heyho-03-min_ijzqtw.jpg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025506/south-pexels-heyho-02-min_xhui4w.jpg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025506/pexels-olgalioncat-7245328-min_trab4x.jpg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025505/south-pexels-heyho-05-min_qae5vh.jpg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025505/south-pexels-heyho-06-min_uxqhuc.jpg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1722025505/south-pexels-heyho-01-min_u44mec.jpg'},
+  {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941296/southshare-paints-pixabay_wx6bhf.jpg'}
+  // {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941259/south-pexels-heyho-03_eciurd.jpeg'},
+  // {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941245/south-pexels-heyho-04_bny2t7.jpeg'},
+  // {url:'https://res.cloudinary.com/dpnza2tuy/image/upload/v1721941296/southshore-pexels-heyho_pi6iah.jpeg'},
 
 ]
 
