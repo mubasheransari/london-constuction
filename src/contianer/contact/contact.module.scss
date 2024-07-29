@@ -125,6 +125,14 @@ $blue:#467FF7;
                     padding-top: 10px;
                 }
 
+                .loader {
+                    display: flex;
+                    @media (max-width:1050px) {
+                        min-height: 20rem;
+                        
+                    }
+                }
+
             }
 
             
