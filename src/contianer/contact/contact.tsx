@@ -1,11 +1,12 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState,useRef } from 'react'
 import style from './contact.module.scss'
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import emailjs from '@emailjs/browser';
 
 type Props = {}
 
@@ -14,6 +15,8 @@ const options = ['New project Enquiry','Maintenance Enquiry','Product Enquiry','
 const ContactComp = (props: Props) => {
 
     const [btnDisabled,setBtnDisabled] = useState(false)
+    const [showMsg,setShowMsg] = useState('')
+    const form:any = useRef();
 
     const validationSchema = yup.object({
         name: yup.string().min(3, 'must be at least 3 characters long').required('First Name is required'),
@@ -22,6 +25,29 @@ const ContactComp = (props: Props) => {
         enquiry:yup.string().required('Enquiry is required'),
         message:yup.string().required('message is required'),
       }); 
+      const sendEmail = () => {
+        setBtnDisabled(true)
+      
+        emailjs
+        .sendForm( 'service_dypvkhh', 'template_i1bu4iz', form.current, {
+          publicKey:  'YvcL1-VJjm_J4uKFv',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            setBtnDisabled(false);
+            setShowMsg('Your request has been submitted successfully')
+
+
+          },
+          (error) => {
+            console.log('FAILED...', );
+            setBtnDisabled(false)
+            setShowMsg('Your request has been failed. Kindly try again')
+
+          },
+        );
+      };
       
     const formik = useFormik({
         initialValues: {
@@ -32,14 +58,7 @@ const ContactComp = (props: Props) => {
           message:''
         },
         validationSchema,
-        onSubmit: (values:any) => {
-        alert(JSON.stringify(values, null, 2));
-        setBtnDisabled(true)
-        setTimeout(()=>{
-            setBtnDisabled(false)
-
-        },2000)
-        },
+        onSubmit:()=> sendEmail()
       });
 
   return (
@@ -76,7 +95,7 @@ const ContactComp = (props: Props) => {
             <div className={style.form_detail}>
                 <p>Fill out the form below and we will <br/> contact you as soon as possible!</p>
                 <div className={style.form}>
-                <form onSubmit={formik.handleSubmit}>
+                <form onSubmit={formik.handleSubmit}  ref={form}>
                     <div className={style.input_wrap}>
                     <div>
                     <input
@@ -156,6 +175,7 @@ const ContactComp = (props: Props) => {
                      {formik.submitCount > 0 && formik.errors.message && <p className='text-danger position-absolute'>{formik.errors.message}</p>}
                     </div>
                     <button type='submit' disabled={btnDisabled} className={`${style.send_btn}`}>Send</button>
+                    <p className={style.message}>{showMsg}</p>
                     </form>
                 </div>
             </div>
