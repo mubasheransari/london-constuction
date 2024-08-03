@@ -135,7 +135,7 @@ const ContactComp = (props: Props) => {
                     name="phone_number"
                     type="tel"
                     onChange={formik.handleChange}
-                    value={formik.values.phone} 
+                    value={formik.values.phone_number} 
                     onBlur={formik.handleBlur}
                     className='border border-1 p-3' 
                     placeholder='Phone Number' />
@@ -147,7 +147,7 @@ const ContactComp = (props: Props) => {
                     id="select_enquiry"
                     name="select_enquiry"
                     onChange={formik.handleChange}
-                    value={formik.values.enquiry}
+                    value={formik.values.select_enquiry}
                     onBlur={formik.handleBlur}
                     className='border border-1 p-3'
                      >
