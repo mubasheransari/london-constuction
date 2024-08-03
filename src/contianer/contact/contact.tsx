@@ -23,16 +23,16 @@ const ContactComp = (props: Props) => {
     const validationSchema = yup.object({
         name: yup.string().min(3, 'must be at least 3 characters long').required('First Name is required'),
         email: yup.string().email('Invalid email format').required('Email is required'),
-        phone:yup.string().required('phone number is required'),
-        enquiry:yup.string().required('Enquiry is required'),
+        phone_number:yup.string().required('phone number is required'),
+        select_enquiry:yup.string().required('Enquiry is required'),
         message:yup.string().required('message is required'),
       }); 
       const sendEmail = () => {
         setBtnDisabled(true)
       
         emailjs
-        .sendForm( 'service_dypvkhh', 'template_i1bu4iz', form.current, {
-          publicKey:  'YvcL1-VJjm_J4uKFv',
+        .sendForm('service_uwnsufa', 'template_z7h6chj', form.current, {
+          publicKey: '2MXeRLt4hyHHnr4zW',
         })
         .then(
           () => {
@@ -55,8 +55,8 @@ const ContactComp = (props: Props) => {
         initialValues: {
           name: '',
           email: '',
-          phone: '',
-          enquiry:'',
+          phone_number: '',
+          select_enquiry:'',
           message:''
         },
         validationSchema,
@@ -131,8 +131,8 @@ const ContactComp = (props: Props) => {
                     <div className={style.input_wrap}>
                     <div>
                     <input
-                    id="phone"
-                    name="phone"
+                    id="phone_number"
+                    name="phone_number"
                     type="tel"
                     onChange={formik.handleChange}
                     value={formik.values.phone} 
@@ -144,8 +144,8 @@ const ContactComp = (props: Props) => {
                     </div>
                     <div>
                     <select 
-                    id="enquiry"
-                    name="enquiry"
+                    id="select_enquiry"
+                    name="select_enquiry"
                     onChange={formik.handleChange}
                     value={formik.values.enquiry}
                     onBlur={formik.handleBlur}
