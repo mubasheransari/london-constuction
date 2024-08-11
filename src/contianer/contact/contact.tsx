@@ -86,13 +86,6 @@ const ContactComp = (props: Props) => {
                     <p>Mondays to Fridays</p>
                     <p>9:00 AM - 6:00 PM</p>
                 </div>
-
-                {/* <div className={style.contact_info}>
-                    <p className={style.sub_heading}>Maintenance Hours</p>
-                    <p>Everyday</p>
-                    <p>7:00 AM - 12:00 AM</p>
-                </div> */}
-
             </div>
             <div className={style.form_detail}>
               {!btnDisabled ?<>
@@ -140,7 +133,7 @@ const ContactComp = (props: Props) => {
                     className='border border-1 p-3' 
                     placeholder='Phone Number' />
                      {/* @ts-ignore */}
-                     {formik.submitCount > 0 && formik.errors.phone && <p className='text-danger position-absolute'>{formik.errors.phone}</p>}
+                     {formik.submitCount > 0 && formik.errors.phone_number && <p className='text-danger position-absolute'>{formik.errors.phone_number}</p>}
                     </div>
                     <div>
                     <select 
@@ -161,7 +154,7 @@ const ContactComp = (props: Props) => {
                     })}
                     </select>
                      {/* @ts-ignore */}
-                    {formik.submitCount > 0 && formik.errors.enquiry && <p className='text-danger position-absolute'>{formik.errors.enquiry}</p>}
+                    {formik.submitCount > 0 && formik.errors.select_enquiry && <p className='text-danger position-absolute'>{formik.errors.select_enquiry}</p>}
                     </div>
                     </div>
                     <div>

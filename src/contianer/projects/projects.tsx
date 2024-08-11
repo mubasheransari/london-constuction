@@ -12,7 +12,8 @@ type Props = {}
 const Projects = (props: Props) => {
   return (
     <div className={style.project_container}>
-      <p className={style.heading}>Projects</p>
+      <p className={style.heading}>Coming Soon...</p>
+      {/* <p className={style.heading}>Projects</p>
       <p className={style.feature_heading}>Featured Projects</p>
       <p>Here are some of our standout projects.</p>
       <div>
@@ -24,7 +25,7 @@ const Projects = (props: Props) => {
             </div>
           )
         })}
-      </div>
+      </div> */}
     </div>
   )
 }
