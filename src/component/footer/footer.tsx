@@ -6,7 +6,7 @@ import { Twitter, LinkedIn } from '@mui/icons-material';
 import Link from 'next/link';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
-import SearchIcon from '@mui/icons-material/Search';
+import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
 
 type Props = {}
 
@@ -57,9 +57,16 @@ const Footer = (props: Props) => {
                 
               </div> */}
               <div>
+              <p>
+                <Link href='tel:07802342616'  target='_blank' style={{textDecoration:'none', color:'#000'}}>
+                <MobileFriendlyIcon fontSize='small' /><span className='ms-2'>Mob:07802342616</span>
+                </Link>
+                </p>
+                <Link href='tel:+4402077409165'  target='_blank' style={{textDecoration:'none', color:'#000'}}>
                 <p>
                 <PhoneIcon fontSize='small' /><span className='ms-2'>T:+44 020 7740 9165</span>
                 </p>
+                </Link>
                 <p>
                  <EmailIcon fontSize='small'/><span className='ms-2'>Email: info@southshoreprojects.com</span>
                 </p>
