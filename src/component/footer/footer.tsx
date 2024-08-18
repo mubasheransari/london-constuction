@@ -59,17 +59,17 @@ const Footer = (props: Props) => {
               <div>
               <p>
                 <Link href='tel:07802342616'  target='_blank' style={{textDecoration:'none', color:'#000'}}>
-                <MobileFriendlyIcon fontSize='small' /><span className='ms-2'>Mob:07802342616</span>
+                <MobileFriendlyIcon fontSize='small' /><span className='ms-2'>Mob: 07802342616</span>
                 </Link>
                 </p>
                 <Link href='tel:+4402077409165'  target='_blank' style={{textDecoration:'none', color:'#000'}}>
                 <p>
-                <PhoneIcon fontSize='small' /><span className='ms-2'>T:+44 020 7740 9165</span>
+                <PhoneIcon fontSize='small' /><span className='ms-2'>T: +44 020 7740 9165</span>
                 </p>
                 </Link>
-                <p>
+                {/* <p>
                  <EmailIcon fontSize='small'/><span className='ms-2'>Email: info@southshoreprojects.com</span>
-                </p>
+                </p> */}
               </div>
             </div>
             </div>
